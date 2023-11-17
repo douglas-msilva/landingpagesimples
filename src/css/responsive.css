@@ -1,0 +1,45 @@
+@media (max-width: 1024px) {
+  .header .header-container {
+    padding: 25px 50px;
+  }
+
+  .hero h2 {
+    font-size: 3rem;
+  }
+
+  .hero h3 {
+    font-size: 1.5rem;
+  }
+
+  .sobre {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 240px) {
+  .header .header-container {
+    padding: 25px 50px;
+  }
+  
+  .hero h2 {
+    font-size: 2rem;
+  }
+
+  .hero h3 {
+    font-size: 1rem;
+  }
+
+  .contato .contato-info h3,
+  .contato .contato-info a {
+    font-size: 2rem;
+  }
+
+  .sobre .sobre-info h2{
+    font-size: 4rem;
+  }
+
+  .sobre .sobre-info p{
+    font-size: 2rem;
+  }
+}

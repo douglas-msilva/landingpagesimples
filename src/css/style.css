@@ -1,0 +1,160 @@
+:root {
+  --background-color: hsl(185, 98%, 36%);
+}
+
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+  background: var(--background-color);
+}
+
+main {
+  display: grid;
+  grid-template-areas:
+    "header header header"
+    "hero hero hero"
+    "sobre sobre sobre"
+    "contato contato contato";
+  font-size: 1.6rem;
+  font-family: "Roboto Condensed", sans-serif;
+}
+
+.header {
+  grid-area: header;
+}
+
+.header .header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 25px 80px;
+}
+
+.header .header-container a img {
+  width: 70px;
+  height: 70px;
+  padding: 10px;
+  border-radius: 10px;
+  transition: 0.3s;
+}
+
+.header .header-container a img:hover {
+  background-color: #fff;
+}
+
+.hero {
+  grid-area: hero;
+}
+
+.hero .hero-info {
+  height: 85vh;
+  background: linear-gradient(135deg, #44dcf755 25%, transparent 25%) -40px 0/
+      80px 80px,
+    linear-gradient(225deg, #42c6e4 25%, transparent 25%) -40px 0/ 80px 80px,
+    linear-gradient(315deg, #44f7f155 25%, transparent 25%) 0px 0/ 80px 80px,
+    linear-gradient(45deg, #33a2bb 25%, rgb(14, 68, 96) 25%) 0px 0/ 80px 80px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.hero h2 {
+  text-transform: uppercase;
+  letter-spacing: 0.2rem;
+  font-size: 7rem;
+  font-weight: 500;
+}
+
+.hero h3 {
+  font-size: 2.5rem;
+  font-weight: 200;
+}
+
+.sobre {
+  grid-area: sobre;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.sobre .sobre-info {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 700px;
+}
+
+.sobre .sobre-info.fundo.geladinho-bg1 {
+  background-image: url(../images/bg1.jpg);
+}
+
+.sobre .sobre-info.fundo.geladinho-bg2 {
+  background-image: url(../images/bg2.jpg);
+}
+
+.sobre .sobre-info.fundo.geladinho-bg3 {
+  background-image: url(../images/bg3.jpg);
+}
+
+.sobre .sobre-info.fundo {
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.sobre .sobre-info h2 {
+  font-size: 7rem;
+  font-weight: 500;
+}
+
+.sobre .sobre-info p {
+  padding: 40px;
+  font-size: 4rem;
+  font-weight: 300;
+  text-align: justify;
+}
+
+
+
+.contato {
+  grid-area: contato;
+}
+
+.contato .contato-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.contato .contato-info h3,
+.contato .contato-info a {
+  font-size: 3rem;
+  font-weight: 500;
+  margin: 100px 0;
+  color: #fff;
+}
+.contato .contato-info a {
+  display: flex;
+  font-size: 4rem;
+  margin: 0;
+}
+
+.contato .contato-info i {
+  text-align: center;
+  line-height: 45px;
+  font-size: 2rem;
+  padding: 3px;
+  border-radius: 111px;
+  box-shadow: 5px 5px 10px rgb(22, 99, 91), -5px -5px 10px rgb(26, 110, 125);
+  transition: 0.3s;
+}
+
+.contato .contato-info i:hover {
+  background-color: #fff;
+  color: rgb(26, 110, 125);
+}
